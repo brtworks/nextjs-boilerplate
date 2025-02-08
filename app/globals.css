@@ -1,9 +1,12 @@
+/* Import Animate.css for animations */
 @import 'animate.css/animate.min.css';
 
+/* Import Tailwind CSS (only once) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Root Variables for Light/Dark Mode */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -16,6 +19,7 @@
   }
 }
 
+/* Base Styles */
 body {
   color: var(--foreground);
   background: var(--background);
