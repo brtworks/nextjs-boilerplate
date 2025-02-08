@@ -1,0 +1,14 @@
+/* filepath: /Users/beratkorkmaz/Applications/nextjs-boilerplate/public/styles.css */
+.example-class {
+  color: red;
+  font-size: 16px;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade {
+  opacity: 0;
+}
