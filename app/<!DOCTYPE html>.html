@@ -36,20 +36,7 @@
         }
       }
 
-      function testTypingAnimation(): boolean {
-        type();
-        setTimeout(() => {
-          if (element.textContent === fullText) {
-            console.log("Typing animation works: true");
-            return true;
-          } else {
-            console.log("Typing animation works: false");
-            return false;
-          }
-        }, fullText.length * 100 + 500); // Wait for the typing animation to complete
-      }
-
-      testTypingAnimation();
+      type();
     });
   </script>
 </body>

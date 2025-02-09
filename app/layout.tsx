@@ -23,7 +23,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <html>
       <head>
-        <title>Next.js Boilerplate</title>
+        <title>Berat Korkmaz</title>
       </head>
       <body>
         <div className="animate__animated animate__fadeIn">

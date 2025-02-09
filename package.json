@@ -15,6 +15,7 @@
     "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-typing-effect": "^2.0.5",
     "styled-components": "^6.1.14",
     "typeit": "^8.8.7"
   },
