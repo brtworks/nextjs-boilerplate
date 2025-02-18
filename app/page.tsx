@@ -1,17 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import 'animate.css';
 
 export default function Home() {
-  const [title, setTitle] = useState("/");
-
   const [typedText, setTypedText] = useState("");
   const fullText = "Hello, World";
 
   useEffect(() => {
-    document.title = title; // Dynamically update the title
-
     // Typing effect
     let index = 0;
     const typingInterval = setInterval(() => {
@@ -20,10 +16,10 @@ export default function Home() {
       if (index === fullText.length) {
         clearInterval(typingInterval); // Stop typing when done
       }
-    }, 100); // Adjust speed here (in ms)
+    }, 100);
 
     return () => clearInterval(typingInterval); // Cleanup on component unmount
-  }, [title]);
+  }, []);
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-black">

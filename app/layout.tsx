@@ -1,5 +1,6 @@
 "use client";
 
+import React from 'react';
 import { Inter as GeistSans, Roboto_Mono as GeistMono } from "next/font/google";
 import "./globals.css";
 import ImageShowcase from './ImageShowcase';
@@ -21,15 +22,15 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <html>
+    <html lang="en">
       <head>
-        <title>Berat Korkmaz</title>
+        <title>//brt</title>
       </head>
       <body>
-        <div className="animate__animated animate__fadeIn">
+        <div>
+          <ImageShowcase />
           {children}
         </div>
-        <ImageShowcase />
       </body>
     </html>
   );
