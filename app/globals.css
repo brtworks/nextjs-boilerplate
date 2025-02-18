@@ -1,7 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+
+@import 'animate.css/animate.min.css';
+
+/* Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom Variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,6 +20,7 @@
   }
 }
 
+/* Global Styles */
 body {
   color: var(--foreground);
   background: var(--background);

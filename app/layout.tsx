@@ -1,16 +1,17 @@
 "use client";
 
-import { Geist_Sans, Geist_Mono } from "next/font/google";
+import React from 'react';
+import { Inter as GeistSans, Roboto_Mono as GeistMono } from "next/font/google";
 import "./globals.css";
 import ImageShowcase from './ImageShowcase';
-import * as metadata from './metadata'; // Import metadata
+// import * as metadata from './metadata'; // Import metadata
 
-const geistSans = Geist_Sans({
+const geistSans = GeistSans({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+const geistMono = GeistMono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
@@ -19,23 +20,18 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+export default function Layout({ children }: LayoutProps) {
   return (
-    <html>
+    <html lang="en">
       <head>
-        {/* Add your head elements here */}
+        <title>//brt</title>
       </head>
       <body>
-        <div className="animate__animated animate__fadeIn">
+        <div>
+          <ImageShowcase />
           {children}
         </div>
-        <ImageShowcase />
       </body>
     </html>
   );
-};
-
-export default Layout;
-```
-/* filepath: /Users/beratkorkmaz/Applications/nextjs-boilerplate/app/globals.css */
-@import 'animate.css/animate.min.css';
+}
